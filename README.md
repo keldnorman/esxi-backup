@@ -36,7 +36,7 @@ or
 vim-cmd hostsvc/maintenance_mode_exit
 
 # EXAMPLE
-
+```
 root@nas:/volume1/backup/esxi# ./backup_esxi.sh
  
  ____ <==> ____
@@ -87,3 +87,4 @@ Password:
  Sun Apr 30 02:07:33 CEST 2023 - ESXi backup of 10.0.0.6 esxdmz2.adm.lan completed successfully
 
 root@nas:/volume1/backup/esxi# 
+```
