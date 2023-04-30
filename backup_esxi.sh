@@ -15,7 +15,7 @@ clear
 cat << "EOF"
  
  ____ <==> ____
- \___\(**)/___/  ESXi backup script
+ \___\(**)/___/  ESXi Backup Script
   \___|  |___/    
       L  J     (C)opyleft Keld Norman
       |__|           April 2023
@@ -41,7 +41,6 @@ SSH_REMOTE_AUTHORIZED_FILE="${SSH_REMOTE_AUTHORIZED_DIR}/authorized_keys"
 # Utilities:
 #--------------------------------------------------------
 DIRNAME="/bin/dirname"
-RSYNC="/bin/rsync"
 SCP="/bin/scp"
 SSH="/bin/ssh"
 SSH_KEY_GEN="/bin/ssh-keygen"
@@ -50,7 +49,7 @@ SSH_KEYSCAN="/usr/local/bin/ssh-keyscan"
 # Pre checks
 #--------------------------------------------------------
 # Check if the utilities this script needs exist
-for UTIL in ${SSH_KEY_GEN} ${SSH} ${SSH_KEYSCAN} ${RSYNC} ${SCP} ${DIRNAME}; do
+for UTIL in ${SSH_KEY_GEN} ${SSH} ${SSH_KEYSCAN} ${SCP} ${DIRNAME}; do
  if [ ! -x ${UTIL} ]; then 
   printf "\n ### ERROR - Cant find ${UTIL}\n\n"
   exit 1
